@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNC Lookup</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>DNC Lookup</h1>
+        <input type="text" id="phoneNumber" placeholder="Enter Phone Number">
+        <button onclick="checkDNCStatus()">Check DNC Status</button>
+
+        <div id="result">
+            <h2>Results:</h2>
+            <table>
+                <tr><td><strong>Phone</strong></td><td id="phone"></td></tr>
+                <tr><td><strong>State</strong></td><td id="state"></td></tr>
+                <tr><td><strong>DNC National</strong></td><td id="dncNational"></td></tr>
+                <tr><td><strong>DNC State</strong></td><td id="dncState"></td></tr>
+                <tr><td><strong>Litigator</strong></td><td id="litigator"></td></tr>
+                <tr><td><strong>Blacklist Status</strong></td><td id="blacklist"></td></tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
